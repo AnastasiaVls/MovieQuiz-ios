@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,8 +16,58 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="3nO-Ws-BIz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2j-5h-Wbg" userLabel="NO button">
+                                <rect key="frame" x="67" y="347" width="49" height="35"/>
+                                <color key="backgroundColor" name=" White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="QEC-Mj-W58"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" name="Black"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhJ-rs-hcG" userLabel="YES button">
+                                <rect key="frame" x="263" y="347" width="55" height="35"/>
+                                <color key="backgroundColor" name=" White"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" name="Black"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="YES">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Black"/>
+                        <constraints>
+                            <constraint firstItem="G2j-5h-Wbg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Uf-kd-KTd"/>
+                            <constraint firstItem="3nO-Ws-BIz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3MQ-O4-TTt"/>
+                            <constraint firstItem="WhJ-rs-hcG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="524-hG-pOs"/>
+                            <constraint firstItem="3nO-Ws-BIz" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="765-rw-KCN"/>
+                            <constraint firstItem="WhJ-rs-hcG" firstAttribute="height" secondItem="G2j-5h-Wbg" secondAttribute="height" id="EhO-mJ-dLn"/>
+                            <constraint firstAttribute="trailing" secondItem="3nO-Ws-BIz" secondAttribute="trailing" id="NG2-FS-cNC"/>
+                            <constraint firstItem="G2j-5h-Wbg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="QRp-UC-r2P"/>
+                            <constraint firstItem="WhJ-rs-hcG" firstAttribute="leading" secondItem="G2j-5h-Wbg" secondAttribute="trailing" constant="20" id="RJo-2a-5iP"/>
+                            <constraint firstItem="WhJ-rs-hcG" firstAttribute="width" secondItem="G2j-5h-Wbg" secondAttribute="width" id="btn-GE-aMq"/>
+                            <constraint firstAttribute="top" secondItem="3nO-Ws-BIz" secondAttribute="top" id="wOf-4B-y6H"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +75,13 @@
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LaunchScreen" width="1125" height="2436"/>
+        <namedColor name=" White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Black">
+            <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
